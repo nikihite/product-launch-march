@@ -1,8 +1,20 @@
-// import functions
+console.log('hello world from app.js');
 
-// grab DOM elements
+let dog = `Bear`;
 
-// set event listeners 
-    // get user input
-    // use user input to update state 
-    // update DOM to reflect the new state
+console.log(`My dog's name is ${dog}`);
+console.log(`${dog} is very cute.`);
+
+const button = document.getElementById('button');
+
+button.addEventListener('click', ()=>{ 
+    console.log('i am clicking the button');
+
+const inputs = document.getElementById('email-inputs');
+
+inputs.classList.toggle('hide');
+
+const thankYou = document.getElementById('thank-you');
+
+thankYou.classList.toggle('hide');
+});
